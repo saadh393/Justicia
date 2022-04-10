@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  * {
+    font-family: "Inter", sans-serif;
+  }
+  .container {
+    @apply w-10/12 xl:w-8/12  mx-auto;
+  }
+
+  .paragraph-normal {
+    @apply leading-7 text-sm md:text-base font-light;
+  }
+}
