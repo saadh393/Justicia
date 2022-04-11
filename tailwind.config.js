@@ -6,6 +6,9 @@ module.exports = {
         primary: "#933DB5",
         secondary: "#F8DFCB",
       },
+      backgroundImage: {
+        "recentwork-overlay": "url('../assets/overlay/recent-work-overlay.png')",
+      },
     },
   },
   plugins: [],

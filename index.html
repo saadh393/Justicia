@@ -17,6 +17,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -37,7 +47,7 @@
     <!-- This section will contain banner -->
     <!-- Todo : Slider should be importated -->
     <section class="bg-primary">
-      <div class="container py-6 pb-8 xl:pt-6 xl:py-0 xl:pb-0 space-y-5 lg:grid md:space-x-4 grid-cols-2">
+      <div class="container py-8 pb-8 xl:pt-6 xl:py-0 xl:pb-0 space-y-5 lg:grid md:space-x-4 grid-cols-2">
         <div class="lg:relative lg:full lg:bottom-0">
           <img class="" src="./assets/slider/slider-img-1.png" alt="Slider" />
         </div>
@@ -47,11 +57,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi
             repudiandae consequuntur voluptatum.
           </p>
-          <button
-            class="w-max text-base bg-secondary text-primary shadow-lg rounded-full transition px-6 py-2 focus:outline-none focus:ring-4 focus:ring-[#F6D3B6] focus:ring-opacity-60 active:bg-[#F6D3B6]"
-          >
-            Show More
-          </button>
+          <button class="btn-primary">Show More</button>
         </div>
       </div>
     </section>
@@ -61,7 +67,7 @@
       <div class="lg:grid lg:grid-cols-2">
         <img class="object-cover w-full lg:h-[528px]" src="./assets/who-we-are.jpg" alt="" />
         <div class="px-10 lg:pr-20 my-4 flex flex-col justify-center">
-          <h1 class="font-extrabold text-2xl text-primary">How we are</h1>
+          <h1 class="section-title">How we are</h1>
           <p class="my-2 paragraph-normal">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
             some form, by injected humour, or randomised words which don't look even slightly believable. If you are
@@ -80,13 +86,13 @@
 
     <!-- Vision & Mission -->
     <section class="bg-[#D8B4FE] relative">
-      <div class="w-full h-full absolute">
+      <div class="w-full z-0 opacity-25 h-full absolute">
         <img class="absolute w-40 left-0 top-0" src="./assets/overlay/left-top400x.svg" alt="" srcset="" />
-        <img class="absolute w-40 left-0 bottom-0" src="./assets/overlay/left-bottom400x.svg" alt="" srcset="" />
+        <img class="absolute w-20 left-0 bottom-0" src="./assets/overlay/left-bottom400x.svg" alt="" srcset="" />
         <img class="absolute w-40 right-0 top-0" src="./assets/overlay/right-top400x.svg" alt="" srcset="" />
         <img class="absolute w-40 right-0 bottom-0" src="./assets/overlay/right-bottom400x.svg" alt="" srcset="" />
       </div>
-      <div class="container lg:grid grid-cols-2 items-center py-6 lg:py-10 xl:py-14">
+      <div class="relative z-10 container lg:grid grid-cols-2 justify-center py-6 lg:py-10 xl:py-14">
         <!-- Vision -->
         <div class="px-2 py-4 lg:max-w-md">
           <img class="w-64 mx-auto" src="./assets/vision.png" alt="Justicia Vision" />
@@ -108,5 +114,140 @@
         </div>
       </div>
     </section>
+
+    <!-- Our Recent works - Implement slider -->
+    <section class="bg-[#F8DFCB] bg-recentwork-overlay py-12">
+      <div class="container">
+        <h1 class="section-title text-center">Our Recent Works</h1>
+        <!-- Blog Card -->
+        <div class="flex my-8 flex-col lg:flex-row">
+          <img
+            class="lg:w-6/12 object-cover max-h-96 rounded-tl-lg rounded-tr-lg lg:rounded-tr-none lg:rounded-bl-lg"
+            src="./assets/our-work.png"
+            alt=""
+          />
+          <div
+            class="flex flex-col space-y-2 bg-primary justify-center px-6 py-6 lg:py-8 shadow-lg shadow-re rounded-br-lg rounded-bl-lg lg:rounded-tr-lg lg:rounded-bl-none"
+          >
+            <h3 class="text-xs text-white">November 18, 2021</h3>
+            <h1 class="text-xl lg:text-3xl font-bold text-secondary">Imagining our World Anew</h1>
+            <p class="paragraph-normal text-xs text-white">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+            <button class="btn-primary my-8">See More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Publications -->
+    <section class="py-12">
+      <div class="container">
+        <h1 class="section-title">Recent Publications</h1>
+        <a class="mr-auto underline text-primary" href="#">See More</a>
+        <div>
+          <div class="w-64 py-4 flex flex-col space-y-2">
+            <img class="w-full object-cover" src="./assets/publications/publication-1.jpg" alt="" />
+            <h4 class="text-sm text-primary">10 February, 2022</h4>
+            <h2 class="text-lg font-medium text-gray-800 leading-6">
+              American Women: A guide to Women's History Resources at the Library of Congress
+            </h2>
+            <a class="underline text-primary my-2" href="#"
+              ><i class="fa-solid fa-cloud-arrow-down underline"></i> <span>Download</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join as a volunteer -->
+    <section>
+      <div class="container grid lg:grid-cols-2">
+        <!-- Form -->
+        <div class="py-12">
+          <h1 class="section-title my-6">Join Us <span class="text-gray-800">as Volunteer</span></h1>
+          <form>
+            <!-- Name -->
+            <div class="mb-4">
+              <label class="block text-gray-700 text-base mb-2" for="name">Name</label>
+              <input
+                class="appearance-none font-light border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="John Doe"
+                type="text"
+                id="name"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+              <label class="block text-gray-700 text-base mb-2" for="Email">Email</label>
+              <input
+                class="appearance-none font-light border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="example@email.com"
+                type="email"
+                id="Email"
+              />
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-4">
+              <label class="block text-gray-700 text-base mb-2" for="Phone">Phone</label>
+              <input
+                class="appearance-none font-light border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="0123456789"
+                type="phone"
+                id="Phone"
+              />
+            </div>
+
+            <label class="md:w-2/3 block text-gray-500 font-light mb-4">
+              <input class="mr-2 leading-tight" type="checkbox" />
+              <span class="text-sm">
+                I have read the <a class="text-primary underline" href="#">Privacy Policy</a>
+              </span>
+            </label>
+
+            <input class="btn btn-secondary" type="button" value="Reach Me" />
+          </form>
+        </div>
+
+        <!-- Join us Image -->
+        <img class="mx-auto h-full object-contain object-bottom" src="./assets/Join-us.jpg" alt="" />
+      </div>
+    </section>
+
+    <footer class="bg-primary py-8">
+      <div class="container lg:grid lg:grid-cols-2">
+        <div>
+          <img class="w-8 h-8 md:w-10 md:h-10" src="./assets/logo.png" alt="Justicia" />
+          <h2 class="text-white font-bold tracking-wider text-2xl my-2">Justicia</h2>
+          <p class="text-white font-light">Copyright @ 2022</p>
+          <ul class="footer-links">
+            <a href="/terms">
+              <li>Terms & Condition</li>
+            </a>
+
+            <a href="/privacy">
+              <li>Privacy Policy</li>
+            </a>
+
+            <a href="/cookie">
+              <li>Cookie Policy</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="ml-auto">
+          <h3 class="text-white">Follow Us On</h3>
+          <div class="flex space-x-2 my-4">
+            <img src="./assets/social-media/youtube.png" alt="" />
+            <img src="./assets/social-media/twitter.png" alt="" />
+            <img src="./assets/social-media/facebook.png" alt="" />
+            <img src="./assets/social-media/instagram.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* Utilities Classes */
   * {
     font-family: "Inter", sans-serif;
   }
@@ -11,6 +12,30 @@
   }
 
   .paragraph-normal {
-    @apply leading-7 text-sm md:text-base font-light;
+    @apply leading-6 lg:leading-7 text-sm md:text-base font-light;
+  }
+
+  .section-title {
+    @apply font-extrabold text-2xl text-primary;
+  }
+
+  .btn-primary {
+    @apply w-max text-xs lg:text-base bg-secondary text-primary shadow-lg rounded-full transition px-6 py-2 focus:outline-none focus:ring-4 focus:ring-[#F6D3B6] focus:ring-opacity-60 active:bg-[#F6D3B6];
+  }
+
+  .btn-secondary {
+    @apply bg-primary text-white focus-within:ring-[#D78ECE] active:bg-[#A53B98];
+  }
+
+  .btn {
+    @apply w-max text-xs lg:text-base shadow-lg rounded-full transition px-6 py-2 focus:outline-none focus:ring-4 focus:ring-opacity-60;
+  }
+
+  /* Home Page */
+  .footer-links {
+    @apply flex space-x-2 text-white font-light;
+  }
+  .footer-links > li {
+    @apply text-green-600;
   }
 }
