@@ -424,7 +424,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
 }
