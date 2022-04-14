@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
   input {
     @apply focus:ring-1 ring-primary outline-none;
   }
@@ -45,11 +49,11 @@
 
   /* Our Recent Work | Slider Section | Started */
   .recentwork-card {
-    @apply flex my-8 flex-col lg:flex-row;
+    @apply flex flex-col lg:flex-row;
   }
 
   .recentwork-card--img {
-    @apply lg:w-6/12 object-cover max-h-96 rounded-tl-lg rounded-tr-lg lg:rounded-tr-none lg:rounded-bl-lg;
+    @apply overflow-hidden lg:w-6/12 object-cover max-h-96 rounded-tl-lg rounded-tr-lg lg:rounded-tr-none lg:rounded-bl-lg;
   }
 
   .recentwork-card--content {
@@ -69,7 +73,7 @@
   /* Recent Publication | Slider Section | Started */
 
   .publication-card {
-    @apply w-64 py-4 flex flex-col space-y-2 mx-auto;
+    @apply w-60 py-4 flex flex-col space-y-2 mx-auto;
   }
 
   .publication-card--img {
@@ -141,10 +145,10 @@
     @apply text-gray-800;
   }
 
-  .active {
+  .pagination-Container .active {
     @apply bg-primary text-white;
   }
-  .active a {
+  .pagination-Container .active a {
     @apply text-white;
   }
 }

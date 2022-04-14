@@ -35,7 +35,7 @@
         <img class="w-8 h-8 md:w-10 md:h-10" src="./assets/logo.png" alt="Justicia" />
         <ul class="hidden md:flex items-center gap-x-5">
           <a href="/"><li>Home</li></a>
-          <a href="/about"><li>About Us</li></a>
+          <a href="#about"><li>About Us</li></a>
           <a href="#works"><li>Our Works</li></a>
           <a href="/publications"><li>Publications</li></a>
           <a href="#join"><li>Join us</li></a>
@@ -45,7 +45,6 @@
     </nav>
 
     <!-- This section will contain banner -->
-    <!-- Todo : Slider should be importated -->
     <section class="bg-primary">
       <div class="container py-8 pb-8 xl:pt-6 xl:py-0 xl:pb-0 space-y-5 lg:grid md:space-x-4 grid-cols-2">
         <div class="lg:relative lg:full lg:bottom-0">
@@ -63,11 +62,11 @@
     </section>
 
     <!-- Who we are section -->
-    <section>
+    <section id="about" class="snap-start snap-always">
       <div class="lg:grid lg:grid-cols-2">
         <img class="object-cover w-full lg:h-[528px]" src="./assets/who-we-are.jpg" alt="" />
         <div class="px-10 lg:pr-20 my-4 flex flex-col justify-center">
-          <h1 class="section-title">How we are</h1>
+          <h1 class="section-title">Who we are</h1>
           <p class="my-2 paragraph-normal">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
             some form, by injected humour, or randomised words which don't look even slightly believable. If you are
@@ -118,7 +117,7 @@
     <!-- Our Recent works - Implement slider -->
     <section class="bg-[#F8DFCB] bg-recentwork-overlay py-12" id="works">
       <div class="container">
-        <h1 class="section-title text-center">Our Recent Works</h1>
+        <h1 class="section-title text-center my-6">Our Recent Works</h1>
         <div class="owl-carousel recentwork-carousel">
           <!-- Blog Card One -->
           <div class="recentwork-card">
@@ -171,11 +170,11 @@
     <!-- Recent Publications -->
     <section class="py-12">
       <div class="container">
-        <h1 class="section-title text-center">Recent Publications</h1>
+        <h1 class="section-title text-center my-6">Recent Publications</h1>
         <p class="text-right">
           <a
             class="underline text-primary cursor-pointer hover:underline-offset-2 hover:text-primary-hover hover:shadow-lg hover:font-medium transition-all active:text-primary-active"
-            href="#"
+            href="/publications.html"
             >See More</a
           >
         </p>
@@ -256,7 +255,7 @@
     </section>
 
     <!-- Join as a volunteer -->
-    <section id="join">
+    <section id="join" class="snap-start snap-always">
       <div class="container grid lg:grid-cols-2">
         <!-- Form -->
         <div class="py-12">
@@ -353,7 +352,7 @@
         margin: 20,
         center: true,
         rewind: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 2500,
         autoplayHoverPause: true,
         slideTransition: "ease",
