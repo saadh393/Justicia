@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justicia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav class="h-16 md:h-20 bg-primary">
+      <div class="container h-full flex justify-between items-center text-white">
+        <img class="w-8 h-8 md:w-10 md:h-10" src="./assets/logo.png" alt="Justicia" />
+        <ul class="hidden md:flex items-center gap-x-5">
+          <a href="/"><li>Home</li></a>
+          <a href="/about"><li>About Us</li></a>
+          <a href="#works"><li>Our Works</li></a>
+          <a href="/publications"><li>Publications</li></a>
+          <a href="#join"><li>Join us</li></a>
+        </ul>
+        <img class="md:hidden w-4 h-4" src="./assets/Menu.svg" alt="Hamburger" srcset="" />
+      </div>
+    </nav>
+
+    <!-- Join as a volunteer -->
+    <section id="join">
+      <div class="container grid lg:grid-cols-2">
+        <!-- Form -->
+        <div class="py-12">
+          <h1 class="section-title my-6">Join Us <span class="text-gray-800">as Volunteer</span></h1>
+          <form>
+            <!-- Name -->
+            <div class="mb-4 pr-1">
+              <label class="block text-gray-700 text-base mb-2" for="name">Name</label>
+              <input
+                class="appearance-none font-light border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="John Doe"
+                type="text"
+                id="name"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4 pr-1">
+              <label class="block text-gray-700 text-base mb-2" for="Email">Email</label>
+              <input
+                class="appearance-none font-light border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="example@email.com"
+                type="email"
+                id="Email"
+              />
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-4 pr-1">
+              <label class="block text-gray-700 text-base mb-2" for="Phone">Phone</label>
+              <input
+                class="appearance-none font-light border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="0123456789"
+                type="phone"
+                id="Phone"
+              />
+            </div>
+
+            <label class="md:w-2/3 block text-gray-500 font-light mb-4">
+              <input class="mr-2 leading-tight" type="checkbox" />
+              <span class="text-sm">
+                I have read the <a class="text-primary underline" href="#">Privacy Policy</a>
+              </span>
+            </label>
+
+            <input class="btn btn-primary" type="button" value="Reach Me" />
+          </form>
+        </div>
+
+        <!-- Join us Image -->
+        <img class="mx-auto h-full object-contain object-bottom" src="./assets/Join-us.jpg" alt="" />
+      </div>
+    </section>
+
+    <footer class="bg-primary py-8">
+      <div class="container lg:grid lg:grid-cols-2">
+        <div>
+          <img class="w-8 h-8 md:w-10 md:h-10" src="./assets/logo.png" alt="Justicia" />
+          <h2 class="text-white font-bold tracking-wider text-2xl my-2">Justicia</h2>
+          <p class="text-white font-light text-xs my-2">Copyright @ 2022</p>
+          <ul class="footer-links">
+            <a href="/terms">
+              <li>Terms & Condition</li>
+            </a>
+
+            <a href="/privacy">
+              <li>Privacy Policy</li>
+            </a>
+
+            <a href="/cookie">
+              <li>Cookie Policy</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="ml-auto">
+          <h3 class="text-white text-sm">Follow Us On</h3>
+          <div class="flex space-x-2 my-4">
+            <img src="./assets/social-media/youtube.png" alt="" />
+            <img src="./assets/social-media/twitter.png" alt="" />
+            <img src="./assets/social-media/facebook.png" alt="" />
+            <img src="./assets/social-media/instagram.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

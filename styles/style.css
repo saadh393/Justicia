@@ -436,9 +436,18 @@ input:focus {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+a {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 a:hover {
   --tw-text-opacity: 1;
   color: rgb(251 238 228 / var(--tw-text-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-underline-offset: 2px;
 }
 
 a:active {
@@ -1222,9 +1231,9 @@ a:active {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.footer-links > li {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
+.footer-links > a {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .hover\:font-medium:hover {

@@ -34,11 +34,11 @@
       <div class="container h-full flex justify-between items-center text-white">
         <img class="w-8 h-8 md:w-10 md:h-10" src="./assets/logo.png" alt="Justicia" />
         <ul class="hidden md:flex items-center gap-x-5">
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>About Us</li></a>
-          <a href="#"><li>Our Works</li></a>
-          <a href="#"><li>Publications</li></a>
-          <a href="#"><li>Join us</li></a>
+          <a href="/"><li>Home</li></a>
+          <a href="/about"><li>About Us</li></a>
+          <a href="#works"><li>Our Works</li></a>
+          <a href="/publications"><li>Publications</li></a>
+          <a href="#join"><li>Join us</li></a>
         </ul>
         <img class="md:hidden w-4 h-4" src="./assets/Menu.svg" alt="Hamburger" srcset="" />
       </div>
@@ -116,7 +116,7 @@
     </section>
 
     <!-- Our Recent works - Implement slider -->
-    <section class="bg-[#F8DFCB] bg-recentwork-overlay py-12">
+    <section class="bg-[#F8DFCB] bg-recentwork-overlay py-12" id="works">
       <div class="container">
         <h1 class="section-title text-center">Our Recent Works</h1>
         <div class="owl-carousel recentwork-carousel">
@@ -194,7 +194,7 @@
 
           <!-- Publication 2  -->
           <div class="publication-card">
-            <img class="publication-card--img" src="./assets/publications/publication-1.jpg" alt="" />
+            <img class="publication-card--img" src="./assets/publications/publication-2.jpg" alt="" />
             <h4 class="publication-card--date">10 February, 2022</h4>
             <h2 class="publication-card--title">
               American Women: A guide to Women's History Resources at the Library of Congress
@@ -206,7 +206,7 @@
 
           <!-- Publication 3  -->
           <div class="publication-card">
-            <img class="publication-card--img" src="./assets/publications/publication-1.jpg" alt="" />
+            <img class="publication-card--img" src="./assets/publications/publication-3.jpg" alt="" />
             <h4 class="publication-card--date">10 February, 2022</h4>
             <h2 class="publication-card--title">
               American Women: A guide to Women's History Resources at the Library of Congress
@@ -230,7 +230,7 @@
 
           <!-- Publication 5  -->
           <div class="publication-card">
-            <img class="publication-card--img" src="./assets/publications/publication-1.jpg" alt="" />
+            <img class="publication-card--img" src="./assets/publications/publication-2.jpg" alt="" />
             <h4 class="publication-card--date">10 February, 2022</h4>
             <h2 class="publication-card--title">
               American Women: A guide to Women's History Resources at the Library of Congress
@@ -242,7 +242,7 @@
 
           <!-- Publication 6  -->
           <div class="publication-card">
-            <img class="publication-card--img" src="./assets/publications/publication-1.jpg" alt="" />
+            <img class="publication-card--img" src="./assets/publications/publication-3.jpg" alt="" />
             <h4 class="publication-card--date">10 February, 2022</h4>
             <h2 class="publication-card--title">
               American Women: A guide to Women's History Resources at the Library of Congress
@@ -256,7 +256,7 @@
     </section>
 
     <!-- Join as a volunteer -->
-    <section>
+    <section id="join">
       <div class="container grid lg:grid-cols-2">
         <!-- Form -->
         <div class="py-12">
@@ -316,7 +316,7 @@
         <div>
           <img class="w-8 h-8 md:w-10 md:h-10" src="./assets/logo.png" alt="Justicia" />
           <h2 class="text-white font-bold tracking-wider text-2xl my-2">Justicia</h2>
-          <p class="text-white font-light">Copyright @ 2022</p>
+          <p class="text-white font-light text-xs my-2">Copyright @ 2022</p>
           <ul class="footer-links">
             <a href="/terms">
               <li>Terms & Condition</li>
@@ -333,7 +333,7 @@
         </div>
 
         <div class="ml-auto">
-          <h3 class="text-white">Follow Us On</h3>
+          <h3 class="text-white text-sm">Follow Us On</h3>
           <div class="flex space-x-2 my-4">
             <img src="./assets/social-media/youtube.png" alt="" />
             <img src="./assets/social-media/twitter.png" alt="" />

@@ -8,7 +8,7 @@
   }
 
   a {
-    @apply hover:text-secondary-hover active:text-secondary-active;
+    @apply transition-all hover:text-secondary-hover active:text-secondary-active hover:underline hover:underline-offset-2;
   }
 }
 
@@ -96,7 +96,7 @@
   .footer-links {
     @apply flex space-x-2 text-white font-light;
   }
-  .footer-links > li {
-    @apply text-green-600;
+  .footer-links > a {
+    @apply text-xs;
   }
 }
