@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html", "./*.html"],
+  content: ["./index.html", "./"],
   theme: {
     extend: {
       colors: {
