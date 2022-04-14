@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  input {
+    @apply focus:ring-1 ring-primary outline-none;
+  }
+
+  a {
+    @apply hover:text-secondary-hover active:text-secondary-active;
+  }
+}
+
 @layer utilities {
   /* Utilities Classes */
   * {
@@ -19,19 +29,70 @@
     @apply font-extrabold text-2xl text-primary;
   }
 
-  .btn-primary {
-    @apply w-max text-xs lg:text-base bg-secondary text-primary shadow-lg rounded-full transition px-6 py-2 focus:outline-none focus:ring-4 focus:ring-[#F6D3B6] focus:ring-opacity-60 active:bg-[#F6D3B6];
+  .btn-secondary {
+    @apply bg-secondary text-primary hover:bg-secondary-hover focus:ring-secondary active:bg-secondary-active;
   }
 
-  .btn-secondary {
-    @apply bg-primary text-white focus-within:ring-[#D78ECE] active:bg-[#A53B98];
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-hover focus-within:ring-primary active:bg-primary-active;
   }
 
   .btn {
-    @apply w-max text-xs lg:text-base shadow-lg rounded-full transition px-6 py-2 focus:outline-none focus:ring-4 focus:ring-opacity-60;
+    @apply cursor-pointer w-max text-xs lg:text-base shadow-lg rounded-full transition px-6 py-2 focus:outline-none focus:ring-4 focus:ring-opacity-60;
   }
 
   /* Home Page */
+
+  /* Our Recent Work | Slider Section | Started */
+  .recentwork-card {
+    @apply flex my-8 flex-col lg:flex-row;
+  }
+
+  .recentwork-card--img {
+    @apply lg:w-6/12 object-cover max-h-96 rounded-tl-lg rounded-tr-lg lg:rounded-tr-none lg:rounded-bl-lg;
+  }
+
+  .recentwork-card--content {
+    @apply flex flex-col space-y-2 bg-primary justify-center px-6 py-6 lg:py-8 shadow-lg  rounded-br-lg rounded-bl-lg lg:rounded-tr-lg lg:rounded-bl-none;
+  }
+
+  .recentwork-card--date {
+    @apply text-xs text-white;
+  }
+
+  .recentwork-card--title {
+    @apply text-xl lg:text-3xl font-bold text-secondary;
+  }
+
+  /* Our Recent Work | Slider Section | Ended */
+
+  /* Recent Publication | Slider Section | Started */
+
+  .publication-card {
+    @apply w-64 py-4 flex flex-col space-y-2 mx-auto;
+  }
+
+  .publication-card--img {
+    @apply w-full object-cover;
+  }
+
+  .publication-card--date {
+    @apply text-sm text-primary;
+  }
+
+  .publication-card--title {
+    @apply text-lg font-medium text-gray-800 leading-6;
+  }
+
+  .publication-card--downloadAnchor {
+    @apply underline text-primary my-2 hover:text-primary-hover active:text-primary-active;
+  }
+
+  .publication-card--downloadIcon {
+    @apply underline;
+  }
+  /* Recent Publication | Slider Section | Ended */
+
   .footer-links {
     @apply flex space-x-2 text-white font-light;
   }
