@@ -23,6 +23,6 @@ The mission of **Justicia** Project is to abolish child marriage, promote the ri
 ### Preview
 
 <img style="width:100vw; object-fit:contain; margin-top:1rem" src="./screenshots/Home.jpg" >
-<img style="width:100vw; object-fit:contain; margin-top:1rem" src="./screenshots/Our Recent Works.jpg" >
-<img style="width:100vw; object-fit:contain; margin-top:1rem" src="./screenshots/Publications.jpg" >
-<img style="width:100vw; object-fit:contain; margin-top:1rem" src="./screenshots/Blog Details.jpg" >
+<img style="width:100vw; object-fit:contain; margin-top:1rem" src="./screenshots/Our Recent Works.jpg" loading="lazy">
+<img style="width:100vw; object-fit:contain; margin-top:1rem" src="./screenshots/Publications.jpg" loading="lazy">
+<img style="width:100vw; object-fit:contain; margin-top:1rem" src="./screenshots/Blog Details.jpg" loading="lazy">
