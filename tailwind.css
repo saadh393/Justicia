@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Playfair Display";
-  src: url("PlayfairDisplay-Black.woff2") format("woff2"), url("PlayfairDisplay-Black.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("PlayfairDisplay-Bold.woff2") format("woff2"), url("PlayfairDisplay-Bold.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("PlayfairDisplay-SemiBold.woff2") format("woff2"), url("PlayfairDisplay-SemiBold.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("PlayfairDisplay-Medium.woff2") format("woff2"), url("PlayfairDisplay-Medium.woff") format("woff");
+  src: url("../fonts/PlayfairDisplay-Medium.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -49,11 +49,20 @@
     font-weight: 500;
   }
 
+  a.link {
+    @apply text-primary-pink underline;
+    font-family: "Playfair Display", sans-serif;
+  }
+
   .container {
-    @apply max-w-7xl mx-auto;
+    @apply px-4 md:px-0 md:max-w-5xl mx-auto;
   }
 
   .primary-gradient-pink {
     background: linear-gradient(180deg, #f476a6 0%, #ff629e 100%);
+  }
+
+  .paragraph {
+    @apply leading-7 text-lg text-slate-600;
   }
 }
