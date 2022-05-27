@@ -65,6 +65,10 @@
   .paragraph {
     @apply leading-7 text-lg text-slate-600;
   }
+
+  .btn {
+    @apply appearance-none px-4 py-2 rounded-md outline-none block;
+  }
 }
 .bg-dots::after {
   content: "";
