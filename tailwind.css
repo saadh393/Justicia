@@ -66,3 +66,19 @@
     @apply leading-7 text-lg text-slate-600;
   }
 }
+.bg-dots::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 150px;
+  z-index: 1;
+  bottom: 0;
+  background-image: url("../assets/shapes/dots.svg");
+  background-repeat: no-repeat;
+}
+
+.mission-dots::after {
+  left: auto;
+  right: 150px;
+}
