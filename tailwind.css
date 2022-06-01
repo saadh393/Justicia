@@ -55,11 +55,11 @@
   }
 
   .container {
-    @apply px-4 md:px-0 md:max-w-5xl mx-auto;
+    @apply px-4 lg:px-0 md:max-w-5xl mx-auto;
   }
 
   .primary-gradient-pink {
-    background: linear-gradient(180deg, #f476a6 0%, #ff629e 100%);
+    background: linear-gradient(180deg, #d063fc 0%, #9e34d0 100%);
   }
 
   .paragraph {
@@ -68,6 +68,16 @@
 
   .btn {
     @apply appearance-none px-4 py-2 rounded-md outline-none block;
+  }
+
+  .btn.bg-primary-pink {
+    @apply transition-colors;
+    box-shadow: 0px 8px 11px rgba(159, 53, 209, 0.25);
+  }
+
+  .btn.bg-primary-pink:hover {
+    background: #ef1671;
+    box-shadow: 0px 5px 10px rgba(239, 22, 113, 0.5);
   }
 }
 .bg-dots::after {
@@ -85,4 +95,15 @@
 .mission-dots::after {
   left: auto;
   right: 150px;
+}
+
+footer {
+  background-image: url("../assets/footer.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+footer svg {
+  transform: scale(0.8);
 }

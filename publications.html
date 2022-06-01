@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- tailwind css -->
     <link rel="stylesheet" href="./styles/main.css" />
-    <title>Justicia</title>
+
+    <!-- Alpine.js -->
+    <script defer src="./scripts/cdn.min.js"></script>
+
+    <title>Our Recent Works | Justicia</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -39,7 +41,7 @@
     <!-- Hero Section -->
     <section>
       <!-- Pink Container -->
-      <div class="primary-gradient-pink h-[650px] py-40 relative hero-section">
+      <div class="primary-gradient-pink h-[450px] py-40 relative hero-section">
         <!-- Left Side Overlay -->
         <svg class="absolute left-0 md:w-auto h-full top-0 opacity-10 md:opacity-20" xmlns="http://www.w3.org/2000/svg" width="133.48" height="100%" viewBox="0 0 133.48 476.94">
           <defs>
@@ -298,145 +300,25 @@
 
         <!-- Content Container -->
         <div class="px-4 md:px-0 max-w-4xl mx-auto space-y-6 relative">
-          <h1 class="text-slate-50 text-center text-[45px] leading-[60px] font-[600]">Justicia provide legal information for victims of abuse</h1>
+          <h1 class="text-slate-50 text-center text-[45px] leading-[60px] font-[600]">Our Publications</h1>
           <p class="text-lg tracking-wide text-white text-center">Our telephone advice lines provide vital free and confidential legal advice to women.</p>
         </div>
-
-        <!-- Bottom Grass Overlay -->
-        <div class="hidden md:block w-8/12 mx-auto relative h-full overflow-hidden">
-          <!-- Left Grass -->
-          <svg class="overlay absolute left-0 w-auto h-full -bottom-[25px]" width="163.7px" height="209.39px" viewBox="0 0 208 210" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M142.17 131.273C119.515 131.451 109.033 190.661 109.033 190.661L108.766 190.426C103.25 178.849 98.8123 166.787 95.5081 154.392C99.2179 150.662 119.314 130.308 123.53 122.483C128.389 113.981 125.285 94.8968 113.993 95.3709C102.7 95.845 93.384 144.658 93.384 144.658L92.6759 143.783C89.8709 132.817 87.4581 121.601 85.4048 110.998C90.2422 103.983 101.459 87.1178 103.398 79.4219C105.882 69.5397 104.826 60.2003 96.6659 61.3613C90.4506 62.2456 84.4361 82.3151 81.8919 91.7762C80.3997 82.9284 79.256 75.1635 78.4064 69.1923C81.7238 58.6777 84.0942 47.8846 85.4889 36.9427C85.8379 26.2709 83.5614 10.2709 76.2403 9.399C68.9192 8.52707 62.5945 18.7604 62.387 35.8949C62.2504 48.8796 70.8076 63.6345 75.0236 70.025C75.8623 75.9197 76.9297 83.4221 78.422 91.9966C73.035 81.7503 59.9568 58.188 48.267 56.1412C41.5668 54.9857 35.6127 62.9013 40.346 75.1151C45.0793 87.3289 76.7982 107.927 76.7982 107.927L82.1854 113.252C83.7594 121.307 85.5731 129.68 87.5774 138.025C79.2978 129.05 63.4957 113.412 48.2108 107.425C37.8884 103.231 15.4124 117.793 32.0806 134.049C46.2322 147.657 81.5141 153.376 91.9402 154.744C94.7882 165.195 98.3385 175.441 102.567 185.411C89.412 174.981 58.7117 153.34 41.0079 159.335C17.8893 167.193 16.5975 190.926 38.8713 197.637C61.145 204.348 110.095 198.125 110.095 198.125C110.095 198.125 137.855 180.507 147.682 170.01C157.509 159.513 164.864 131.091 142.17 131.273Z"
-              fill="white"
-              fill-opacity="0.20"
-            />
-            <path
-              d="M43.955 132.663C43.955 132.663 50.2401 133.421 65.0748 145.496C73.7286 152.242 78.868 161.583 79.3781 171.492C79.3781 171.492 84.4154 142.856 102.832 132.663C108.715 146.718 108.715 162.039 102.832 176.093C114.576 163.33 131.567 154.711 150.479 151.922C150.479 151.922 148.168 176.637 124.414 191.663C100.66 206.69 63.4211 199.596 55.0926 191.663C46.764 183.731 41.2942 173.97 39.322 163.523C37.3498 153.075 38.9567 142.372 43.955 132.663Z"
-              fill="#FF7EAF"
-            />
-          </svg>
-
-          <svg class="absolute right-0 w-auto h-full bottom-0 -rotate-12" width="250" height="331" viewBox="0 0 250 331" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M15.1523 242.484C48.0783 228.18 102.639 317.44 102.639 317.44L102.869 316.887C103.156 294.562 101.56 272.144 98.1021 249.918C90.2491 246.259 47.61 226.197 36.2999 216.224C23.6086 205.568 15.4113 172.622 32.0795 166.118C48.7476 159.614 94.7041 232.765 94.7041 232.765L95.1472 230.889C91.9165 211.302 87.9509 191.561 83.8721 173.044C72.2014 164.785 44.7414 144.662 36.8143 133.432C26.6442 119.008 21.9626 103.183 34.5518 99.8099C44.1407 97.2406 66.1984 125.91 76.1753 139.613C72.4517 124.305 68.9436 110.977 66.2025 100.747C54.4053 85.8343 43.7944 69.8595 34.4973 53.0151C26.8943 35.935 19.5496 8.52418 29.5717 2.39482C39.5939 -3.73455 55.5589 8.7856 67.2553 36.4361C76.0892 57.4035 73.5103 86.8408 71.6552 99.9188C74.3611 110.018 77.8051 122.87 81.3468 137.735C82.3333 117.651 85.6015 71.0201 101.169 60.1718C110.103 53.9825 123.99 62.983 125.259 85.8369C126.527 108.691 94.2931 162.521 94.2931 162.521L90.0337 174.626C93.1117 188.702 96.0536 203.447 98.7015 218.27C104.722 198.383 117.205 162.848 135.358 143.294C147.517 129.845 189.751 138.981 176.425 176.078C164.981 207.258 117.692 239.257 103.503 248.19C106.329 266.971 108.002 285.871 108.51 304.762C120.624 279.377 150.689 224.512 180.314 222.829C219.019 220.681 236.674 258.332 208.882 283.561C181.09 308.79 106.065 330.228 106.065 330.228C106.065 330.228 54.1472 319.54 32.9342 308.847C11.7213 298.155 -17.8326 256.805 15.1523 242.484Z"
-              fill="white"
-              fill-opacity="0.12"
-            />
-          </svg>
-        </div>
-
-        <!-- Ladies Standing -->
-        <div class="overflow-x-hidden flex absolute -bottom-[80px] md:-bottom-[50px] items-center w-full justify-center gap-10">
-          <img src="./assets/Hero/Asset 5Justicia.svg" />
-          <img src="./assets/Hero/Asset 11Justicia.svg" />
-          <img src="./assets/Hero/Asset 12Justicia.svg" />
-          <img src="./assets/Hero/Asset 4Justicia.svg" />
-          <img src="./assets/Hero/Asset 9Justicia.svg" />
-          <img src="./assets/Hero/Asset 3Justicia.svg" />
-        </div>
       </div>
     </section>
 
-    <!-- who we are  -->
-    <section class="py-28">
-      <div class="container space-y-6">
-        <h1 class="font-bold text-3xl text-primary-pink text-center">Who We Are</h1>
-        <p class="paragraph text-center">
-          Justicia is many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
-          don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-        </p>
-      </div>
-    </section>
-
-    <!-- Vision Mission -->
-    <section>
-      <div class="container space-y-20">
-        <!-- Vission -->
-        <div class="grid grid-cols-2 items-center relative">
-          <div class="bg-dots">
-            <img class="h-[375px] object-contain relative z-10 drop-shadow-[0_35px_35px_rgba(255, 209, 227,0.25)]" src="./assets/Vision.png" alt="Justicia Vision" />
-          </div>
-          <div class="space-y-5">
-            <h3 class="text-2xl font-bold text-text-black">Our Vision</h3>
-            <p class="paragraph">
-              Justicia is many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
-              Justicia is many variations of passages
-            </p>
-            <a class="block link" href="#">Learn More</a>
-          </div>
-        </div>
-
-        <!-- Mission -->
-        <div class="grid grid-cols-2 items-center relative">
-          <div class="bg-dots mission-dots">
-            <img class="h-[375px] object-contain relative z-10" src="./assets/Mision.svg" alt="Justicia Vision" />
-          </div>
-
-          <div class="space-y-5 col-start-1 row-start-1">
-            <h3 class="text-2xl font-bold text-text-black">Our Mision</h3>
-            <p class="paragraph">
-              Justicia is many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
-              Justicia is many variations of passages
-            </p>
-            <a class="block link" href="#">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Recent Works -->
     <section class="py-16 space-y-20">
-      <div class="container space-y-6">
-        <h1 class="font-bold text-3xl text-primary-pink text-center">Our Recent Works</h1>
-        <p class="paragraph text-center">
-          We do many things variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
-        </p>
-      </div>
-
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 container"
-        x-data='{posts: [
-        { title: "Legal services for women and sector practitioners in Victoria", color: "bg-purple-800", image: "./assets/Blog/Blog-1.jpg" },
-        { title: "Legal services for women and sector practitioners in Victoria", color: "bg-pink-500", image: "./assets/Blog/Blog-2.jpg" },
-        { title: "Legal services for women and sector practitioners in Victoria", color: "bg-emerald-600", image: "./assets/Blog/Blog-3.jpg" },
-        { title: "Legal services for women and sector practitioners in Victoria", color: "bg-orange-500", image: "./assets/Blog/Blog-4.jpg" },
-      ]}'
-      >
-        <template x-for="post in posts">
-          <div>
-            <img class="w-full object-cover" src="./assets/Blog/Blog-1.jpg" alt="" />
-            <div class="text-white py-8 space-y-8 px-4" :class="post.color">
-              <h4 class="text-2xl" x-text="post.title"></h4>
-              <button class="btn border border-slate-100 hover:bg-slate-100/10 transition-all active:bg-slate-900/10">Learn More</button>
-            </div>
-          </div>
-        </template>
-      </div>
-
-      <button class="btn bg-primary-pink !px-28 mx-auto text-white">See Our Other Works</button>
-    </section>
-
-    <!-- Our Publications -->
-    <section class="py-16 space-y-20">
-      <div class="container space-y-6" x-data="{publications : [1,2,3,4]}">
-        <div class="space-y-6">
-          <h1 class="font-bold text-3xl text-primary-pink text-center">Our Publications</h1>
-          <p class="paragraph text-center">
-            We do many things variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words
-          </p>
-        </div>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 container" x-data="{publications : [1,2,3,4]}">
         <template x-for="(publication, index) in publications">
-          <div class="flex flex-col lg:flex-row lg:h-[431px] shadow-md rounded-lg overflow-hidden border my-20">
-            <div class="lg:min-w-[378px] lg:h-[431px] bg-slate-100">
-              <img class="w-full object-cover h-full" src="./assets/publications/publication-1.jpg" />
+          <div class="flex flex-col lg:flex-row lg:h-[210px ] shadow-md rounded-lg overflow-hidden border my-2">
+            <div class="lg:min-w-[185px] h-[216px] bg-slate-100">
+              <img class="w-full object-cover h-full" src="./assets/publications/publication-2.jpg" />
             </div>
-            <div class="h-full flex flex-col justify-center p-5 lg:px-10">
+            <div class="h-full flex flex-col justify-center p-5">
               <div class="">
-                <h1 class="text-2xl lg:text-4xl">American Women: A guide to Women's History Resources at the Library of Congress</h1>
-                <span class="mt-5 block">10 February, 2022</span>
+                <h1 class="text-xl">American Women: A guide to Women's History Resources at the Library of Congress</h1>
+                <span class="mt-4 block">10 February, 2022</span>
               </div>
-              <a href="#" class="mt-10 lg:mt-14 text-lg font-medium text-primary-pink hover:underline underline-offset-4">
+              <a href="#" class="mt-6 text-lg font-medium text-primary-pink hover:underline underline-offset-4">
                 <svg class="inline" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="8 17 12 21 16 17"></polyline>
                   <line x1="12" y1="12" x2="12" y2="21"></line>
@@ -447,58 +329,9 @@
             </div>
           </div>
         </template>
-        <button class="btn bg-primary-pink !px-28 !mt-10 mx-auto text-white">See Our Publications</button>
       </div>
+
+      <!-- <button class="btn bg-primary-pink !px-14 mx-auto text-white">See Our Other Works</button> -->
     </section>
-
-    <footer class="lg:h-[600px] grid place-items-center relative">
-      <img class="hidden lg:block absolute left-0 bottom-0" src="./assets/footer-left.svg" alt="" />
-      <img class="hidden lg:block absolute right-0 bottom-0" src="./assets/footer-right.svg" alt="" />
-      <div class="container text-center py-20 pt-32 lg:p-0 lg:mt-32">
-        <h1 class="text-4xl text-white">Interested in Working with us?</h1>
-        <a class="btn bg-[#FF438A] !inline-block my-10 text-slate-50 !px-14 !rounded-full" href="#">Join us as Volunteer</a>
-        <div class="flex gap-5 justify-center">
-          <a href="#">
-            <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M25.6121 0H3.40308C1.87621 0 0.626953 1.19711 0.626953 2.66025V23.9423C0.626953 25.4054 1.87621 26.6025 3.40308 26.6025H25.6121C27.1389 26.6025 28.3882 25.4054 28.3882 23.9423V2.66025C28.3882 1.19711 27.1389 0 25.6121 0ZM21.4479 6.65064H19.5046C17.9777 6.65064 17.9777 7.84775 17.9777 8.77884V11.5721H21.3091L20.8927 14.8974H17.9777V23.1442H14.5076V14.8974H11.0374V11.7051H14.5076V8.51281C14.5076 5.58653 16.1732 3.99038 18.9494 3.99038C20.1986 3.85737 21.4479 3.99038 21.4479 3.99038V6.65064Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-
-          <a href="#">
-            <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M33.6268 3.13943C32.794 4.4613 31.628 5.61793 30.2955 6.60933V7.43549C30.2955 8.92259 30.1289 10.4097 29.7958 11.8968C29.4627 13.3839 28.7964 14.871 28.1301 16.3581C27.4639 17.8452 26.4645 19.1671 25.2985 20.3237C24.1325 21.6455 22.9666 22.6369 21.4675 23.6283C20.1349 24.6197 18.4693 25.2807 16.637 25.7764C14.8048 26.2721 12.806 26.6025 10.8072 26.6025C6.64301 26.6025 3.14511 25.6111 0.313477 23.7936C0.813177 23.7936 1.31288 23.9588 1.97914 23.9588C3.47825 23.9588 4.97735 23.6283 6.47645 23.1326C7.97555 22.6369 9.30808 21.8108 10.474 20.8194C8.97495 20.8194 7.64242 20.3237 6.47645 19.4975C5.31048 18.6714 4.47765 17.5147 4.14451 16.1929C4.64421 16.3581 4.97735 16.3581 5.47705 16.3581C6.14331 16.3581 6.64301 16.3581 7.30928 16.1929C5.81018 15.8624 4.47765 15.0362 3.31168 13.8796C2.14571 12.723 1.64601 11.0706 1.64601 9.41829C2.64541 9.91399 3.64481 10.2445 4.81078 10.2445C3.81138 9.58353 2.97854 8.75736 2.47884 7.76596C1.97914 6.77456 1.64601 5.78316 1.64601 4.62653C1.64601 3.4699 1.97914 2.4785 2.64541 1.32187C4.31108 3.4699 6.47645 4.957 8.80838 6.27886C11.3069 7.43549 13.8054 8.09643 16.637 8.26166C16.637 7.93119 16.4705 7.27026 16.4705 6.77456C16.4705 4.957 17.1367 3.30466 18.4693 1.9828C19.8018 0.660933 21.4675 0 23.2997 0C25.2985 0 26.9642 0.660933 28.2967 2.14803C29.7958 1.81757 31.2949 1.32187 32.6274 0.4957C32.1277 2.14803 31.1283 3.30466 29.6292 4.29606C30.9618 3.9656 32.2943 3.63513 33.6268 3.13943Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-
-          <a href="#">
-            <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M24.124 0C25.2345 0 26.2061 0.399038 27.039 1.19711C27.733 1.86218 28.1494 2.79327 28.1494 3.85737V22.7452C28.1494 23.8093 27.733 24.7404 26.9002 25.5385C26.0673 26.3365 25.0957 26.7356 23.9852 26.7356H4.41356C3.30311 26.7356 2.33147 26.3365 1.49863 25.5385C0.665796 24.7404 0.388184 23.8093 0.388184 22.7452V3.85737C0.388184 2.79327 0.804602 1.86218 1.63744 1.0641C2.47028 0.266026 3.30311 0 4.41356 0H24.124ZM14.2688 8.24679C12.8807 8.24679 11.6315 8.77884 10.521 9.70993C9.41058 10.641 9.13297 11.9711 9.13297 13.3013C9.13297 14.6314 9.6882 15.8285 10.6598 16.8926C11.6315 17.8237 12.8807 18.3558 14.4076 18.3558C15.7957 18.3558 17.0449 17.8237 18.1554 16.8926C19.127 15.9615 19.6822 14.7644 19.6822 13.3013C19.6822 11.8381 19.127 10.774 18.1554 9.70993C16.9061 8.77884 15.6569 8.24679 14.2688 8.24679ZM25.2345 23.2772V11.5721H22.1807C22.3196 12.1042 22.3196 12.6362 22.3196 13.1683C22.3196 14.6314 21.9031 15.8285 21.2091 17.0256C20.5151 18.2227 19.5434 19.1538 18.2942 19.8189C17.0449 20.484 15.6569 20.883 14.2688 20.883C12.8807 20.883 11.4927 20.75 10.2434 19.9519C8.99416 19.2868 8.02252 18.3558 7.32849 17.1586C6.49565 15.9615 6.21804 14.7644 6.21804 13.3013C6.21804 12.7692 6.21804 12.1042 6.35685 11.7051H3.30311V23.2772C3.30311 23.4102 3.30311 23.5433 3.44192 23.6763C3.58073 23.8093 3.71953 23.8093 3.85834 23.8093H24.6793C24.8181 23.8093 24.9569 23.8093 25.0957 23.6763C25.2345 23.5433 25.2345 23.4102 25.2345 23.2772ZM25.2345 6.65064V3.32532C25.2345 3.19231 25.2345 3.05929 25.0957 2.92628C24.9569 2.79327 24.8181 2.79327 24.6793 2.79327H21.2091C21.0703 2.79327 20.9315 2.79327 20.7927 2.92628C20.6539 3.05929 20.6539 3.19231 20.6539 3.32532V6.65064C20.6539 6.78365 20.6539 6.91666 20.7927 7.04968C20.9315 7.18269 21.0703 7.18269 21.2091 7.18269H24.6793C24.8181 7.18269 24.9569 7.18269 25.0957 7.04968C25.2345 6.91666 25.2345 6.78365 25.2345 6.65064Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-
-          <a href="#">
-            <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.6567 0.660645C21.6538 0.660645 24.9851 0.660644 26.6508 0.819885C28.9827 0.979126 30.4818 1.45685 31.4812 2.09381C32.3141 2.73077 32.8138 3.84546 33.1469 5.27863C33.1469 6.39331 33.3135 8.46344 33.3135 11.489V11.9667C33.3135 15.1516 33.3135 17.2217 33.1469 18.1771C32.9803 19.7695 32.4806 20.8842 31.6478 21.5212C30.815 22.3174 29.3159 22.7951 27.1505 22.9543C25.4848 23.1136 22.32 23.2728 17.4896 23.2728H16.6567C11.6597 23.2728 8.32837 23.2728 6.6627 23.1136C4.33075 22.9543 2.83165 22.4766 1.83224 21.8397C0.999404 21.2027 0.499702 20.088 0.166567 18.6548C0.166567 17.5402 0 15.47 0 12.4445V11.9667C0 8.78192 0 6.71179 0.166567 5.75635C0.333135 4.16394 0.832837 3.04926 1.66567 2.41229C2.49851 1.61609 3.99762 1.13837 6.16299 0.979126C7.82867 0.819885 10.9934 0.660645 15.8239 0.660645C15.9905 0.660645 16.6567 0.660645 16.6567 0.660645ZM12.4926 17.8586L22.8197 11.9667L12.4926 5.91559V17.8586Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Alpine.js -->
-    <script defer src="./scripts/cdn.min.js"></script>
-    <script src="./scripts/main.js"></script>
   </body>
 </html>
